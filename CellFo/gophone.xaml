@@ -1,0 +1,298 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="CellFo.gophone"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1399AC" Offset="0.003"/>
+                <GradientStop Color="#FFFF8100" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <phone:Panorama x:Name="Carrier_Page" Title="Go Phone" Background="{x:Null}">
+
+            <!--Panorama item one-->
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="Go Phone Info">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy4" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Type:" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,110,0,0" TextWrapping="Wrap" Text="Website:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,166,0,0" TextWrapping="Wrap" Text="Retail Stores Available:" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="USA National Prepaid GSM/LTE"/>
+                    	<LineBreak/>
+                    	<Run/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="258,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="134" Height="32" Text="Yes same as AT&amp;T"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,232,0,0" TextWrapping="Wrap" Text="Parent Company:" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="210,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="167" Height="71" Text="AT&amp;T Wireless"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,312,0,0" TextWrapping="Wrap" Text="Phone Number:" VerticalAlignment="Top"/>
+                    <Button x:Name="Sales" Content=" 1-800-901-9878" HorizontalAlignment="Left" Margin="185,295,0,0" VerticalAlignment="Top" Click="Sales_Click" FontSize="17" BorderBrush="{x:Null}" Width="221"/>
+                    <Button x:Name="Website" Content="att.com/shop/wireless/gophone.html" HorizontalAlignment="Left" Margin="121,93,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" ClickMode="Press" FontSize="14" Click="Website_Click" Width="299"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="40,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="129" Width="366" FontSize="16">
+                    	<Run FontSize="20" Text="All Plans Include:"/>
+                    	<Run Text="  Basic Voicemail   -Call Forwarding  Call Waiting  -Caller ID  -International Calling "/>
+                    	<Run Text=" -Nationwide "/>
+                    	<LineBreak/>
+                    	<Run Text="-Long Distance  -Three-Way Calling "/>
+                    </TextBlock>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item one-->
+            <phone:PanoramaItem Header="10¢ /minute">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <Grid x:Name="Plan_Info_Copy2" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features3" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data3" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info3" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para3" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-All calls nationwide 10¢ /minute"/>
+                    	<LineBreak/>
+                    	<Run Text="-20¢ /text message or buy package"/>
+                    	<LineBreak/>
+                    	<Run Text="-25¢ /text message to Mexico, Canada &amp; 100 countries"/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment3" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="357" Height="32" Text="Pay per use 1¢/5KB "/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17">
+                    	<Run Text="-Feature Phone's only"/>
+                    	<LineBreak/>
+                    </TextBlock>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$2 /day">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy3" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features4" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data4" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info4" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para4" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-Unlimited Calls Nationwide"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited messaging text, picture or video"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries"/>
+                    	<LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                    	<Run/>
+                    	<LineBreak/>
+                    	<LineBreak/>
+                    	<Run/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment4" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="336" Height="32" Text="Pay per use 1¢/5KB "/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17">
+                    	<Run Text="-Feature phones only"/>
+                    	<LineBreak/>
+                    </TextBlock>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item two-->
+            <phone:PanoramaItem Header="$25 Monthly">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <Grid x:Name="Plan_Info" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="203" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-250 nationwide minutes"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited text, picture and video messaging"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    	<LineBreak/>
+                    	<Run/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="336" Height="32">
+                    	<Run Text="Pay per use or add"/>
+                    	<Run Text=" $5/50MB package "/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17" Text="-Feature Phones Only"/>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$35 Monthly">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features1" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data1" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info1" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para1" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-500 nationwide minutes "/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited text, picture and video messaging"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    	<LineBreak/>
+                    	<Run/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment1" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="336" Height="32" Text="Unlimited Mobile Web"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17" Text="-Feature Phones Only"/>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$50 Monthly">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy1" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features2" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data2" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info2" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para2" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-Unlimited Nationwide Calls"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Messaging (text, picture, video) "/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    	<LineBreak/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment2" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="336" Height="32">
+                    	<Run FontSize="18" Text="Unlimited mobile Web"/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17" Text="-Feature Phones Only"/>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$25 SmartPhone">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy5" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features5" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data5" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info5" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para5" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-250 nationwide minutes"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Messaging (text, picture, video) "/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    	<LineBreak/>
+                    	<Run/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment5" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="357" Height="32" Text="Add a data package $5/50MB"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17">
+                    	<Run Text="-SmartPhones Phone's only"/>
+                    	<LineBreak/>
+                    </TextBlock>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$40 SmartPhone">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy6" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features6" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data6" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info6" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para6" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-500 nationwide minutes"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Messaging (text, picture, video) "/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    	<LineBreak/>
+                    	<Run Text=""/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment6" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="357" Height="32">
+                    	<Run Text="200 MB "/>
+                    	<Run Text="Add more: $5/100 MB"/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17">
+                    	<Run Text="-SmartPhones only"/>
+                    	<LineBreak/>
+                    </TextBlock>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$50 SmartPhone" FontSize="18">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy7" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features7" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data7" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info7" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para7" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-Unlimited Nationwide Calls"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Messaging (text, picture, video)"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment7" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="357" Height="32" Text="No Data Available "/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17">
+                    	<Run Text="-SmartPhone's only"/>
+                    	<LineBreak/>
+                    </TextBlock>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem CacheMode="{x:Null}" Header="$60 SmartPhone" FontSize="16">
+                <phone:PanoramaItem.Background>
+                    <SolidColorBrush Color="#FF211F1F" Opacity="0.5"/>
+                </phone:PanoramaItem.Background>
+                <phone:PanoramaItem.RenderTransform>
+                    <TranslateTransform/>
+                </phone:PanoramaItem.RenderTransform>
+                <Grid x:Name="Plan_Info_Copy8" HorizontalAlignment="Left" Height="483" VerticalAlignment="Top" Width="420">
+                    <TextBlock x:Name="Features8" HorizontalAlignment="Left" Margin="41,23,0,0" TextWrapping="Wrap" Text="Features:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Data8" HorizontalAlignment="Left" Margin="41,279,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Foreground="White"/>
+                    <TextBlock x:Name="Info8" HorizontalAlignment="Left" Margin="41,343,0,0" TextWrapping="Wrap" Text="Additional Info:" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="Para8" HorizontalAlignment="Left" Margin="41,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="336" Foreground="White" FontSize="18">
+                    	<Run Text="-Unlimited Nationwide Calls"/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Messaging (text, picture, video) "/>
+                    	<LineBreak/>
+                    	<Run Text="-Unlimited Text to Mexico, Canada &amp; 100 countries "/>
+                    	<LineBreak/>
+                    	<Run/>
+                    </TextBlock>
+                    <TextBlock x:Name="Data_Allotment8" HorizontalAlignment="Left" Margin="41,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="17" Width="357" Height="32" Text="2GB Add more: $10/1GB "/>
+                    <TextBlock HorizontalAlignment="Left" Margin="41,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336" Height="72" FontSize="17" Text="-Smartphone's Only"/>
+                </Grid>
+            </phone:PanoramaItem>
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>
